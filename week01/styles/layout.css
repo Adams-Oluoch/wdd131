@@ -1,0 +1,219 @@
+/* ===== styles/layout.css ===== */
+/* external CSS for Holy Grail layout — WDD 131 */
+
+/* ----- RESET & BASE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- BODY AS CSS GRID (Holy Grail layout) ----- */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;  /* header, nav, main+aside, footer */
+  grid-template-columns: 2fr 1fr;          /* main (2fr) + aside (1fr) */
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  background: #f8fafc;
+  color: #0b2c3f;
+  line-height: 1.5;
+}
+
+/* ----- assign grid areas ----- */
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+/* ----- HEADER ----- */
+header {
+  background: #1a3a5f;
+  color: white;
+  padding: 1.5rem 2rem 0.8rem 2rem;
+}
+.header-content {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+/* ----- NAVIGATION (Flexbox) ----- */
+nav {
+  background: #0e2a3b;
+  padding: 0.5rem 2rem;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-menu a {
+  color: #f2e9d0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.2rem;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s;
+}
+.nav-menu a:hover {
+  border-bottom-color: #f5b342;
+  color: white;
+}
+
+/* ----- MAIN CONTENT ----- */
+main {
+  background: #ffffff;
+  padding: 2rem 2rem 2rem 2rem;
+  border-right: 1px solid #d0deeb;
+}
+main h1 {
+  font-size: 2rem;
+  color: #1e415e;
+  margin-bottom: 1.2rem;
+  border-left: 6px solid #f5b342;
+  padding-left: 1rem;
+}
+main p {
+  margin-bottom: 1.5rem;
+  color: #1d3649;
+  max-width: 70ch;
+}
+
+/* placeholder image styles (main) */
+.placeholder-img {
+  margin: 2rem 0 1.5rem 0;
+  background: #ecf3fa;
+  border-radius: 24px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  border: 2px dashed #527a9c;
+}
+.img-box {
+  background: #a5c0d8;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1a3a4b;
+  border-radius: 18px;
+  background-image: repeating-linear-gradient(45deg, #ffffff40 0px, #ffffff40 15px, #8fb0cc 15px, #8fb0cc 30px);
+}
+.placeholder-img figcaption {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #2b4f6e;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+/* second image placeholder inside main */
+.img-placeholder {
+  background: #b9cfec;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0 0.5rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  border: 2px solid #1e4f6e;
+  color: #03212e;
+  font-weight: 600;
+}
+
+/* ----- ASIDE CONTENT ----- */
+aside {
+  background: #e7f0fa;
+  padding: 2rem 1.8rem;
+}
+aside h2 {
+  font-size: 1.9rem;
+  color: #113946;
+  margin-bottom: 1.2rem;
+  border-bottom: 4px dotted #537a9a;
+  padding-bottom: 0.5rem;
+}
+aside p {
+  margin-bottom: 1.4rem;
+  color: #1b394b;
+}
+.aside-img {
+  background: #bed4ec;
+  border-radius: 20px;
+  padding: 2.2rem 0.8rem;
+  margin: 1.8rem 0;
+  text-align: center;
+  border: 2px solid #3b6585;
+  color: #0c2e41;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+.aside-img span {
+  background: #ffffffb3;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  background: #0c2b3c;
+  color: #f0e4cc;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 6px solid #f5b342;
+  font-size: 1.2rem;
+}
+footer div:first-child {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+footer small {
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* ----- RESPONSIVE (small screens) ----- */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;            /* stack main & aside */
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+  main {
+    border-right: none;
+    border-bottom: 1px solid #cbd5e1;
+  }
+  .nav-menu {
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+}
+
+/* ----- validation & utility ----- */
+/* pure grid on body + flex on nav — complete */

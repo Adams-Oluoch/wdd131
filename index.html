@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Simple HTML Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Jerrymac Adams Oluoch</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Jerrymac Adams Oluoch – Keyword summary of page content about web development, Kenya, and personal interests.">
+    <meta name="author" content="Jerrymac Adams Oluoch">
+    
+    <!-- Google Fonts preconnect links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS links -->
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <!-- JavaScript with defer -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/jerrymac-adams-814407351/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
     
-    <p>This is a simple webpage using only HTML.</p>
+    <main>
+        <h1>Jerrymac Adams oluoch</h1>
+        
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <div class="profile-section">
+                    <p>My name is Jerrymac Adams Oluoch but my friends call me Jere. I am from Kenya, a beautiful country in East Africa known for its diverse wildlife and landscapes. I am passionate about web development and technology. I love learning new things and applying them to solve real-world problems.</p>
+                    <figure class="profile-figure">
+                        <img src="images/profile.jpg" alt="Jerrymac Adams Oluoch - Profile Picture" loading="lazy" class="profile-img">
+                        <figcaption>Jerrymac Adams Oluoch</figcaption>
+                    </figure>
+                </div>
+                <div class="country-info">
+                    <h3>Kenya</h3>
+                    <div class="country-detail">
+                        <p>Kenya is located in East Africa and is famous for its savannah, wildlife, and the Great Rift Valley. The country has 47 counties including Nairobi, Mombasa, Kisumu, and many others. Kenya is home to over 50 ethnic groups including Kikuyu, Luo, Luhya, Kalenjin, and Maasai, each contributing to the rich cultural heritage of the nation.</p>
+                        <figure>
+                            <img src="images/Flag_of_Kenya.svg.jpg" alt="Official Flag of Kenya" loading="lazy">
+                            <figcaption>Official Flag of Kenya</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                </ul>
+            
+            </div>
+        </section>
+    </main>
     
-    <h2>My Favorite Things:</h2>
-    
-    <ul>
-        <li>Coffee</li>
-        <li>Music</li>
-        <li>Books</li>
-        <li>Travel</li>
-    </ul>
-    
-    <h3>Daily Schedule:</h3>
-    
-    <table border="1">
-        <tr>
-            <th>Time</th>
-            <th>Activity</th>
-        </tr>
-        <tr>
-            <td>Morning</td>
-            <td>Work</td>
-        </tr>
-        <tr>
-            <td>Afternoon</td>
-            <td>Lunch & Break</td>
-        </tr>
-        <tr>
-            <td>Evening</td>
-            <td>Relax</td>
-        </tr>
-    </table>
-    
-    <hr>
-    
-    <p>Contact: <b>email@example.com</b> | Phone: 123-456-7890</p>
-    <p><i>Created with HTML only</i></p>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇰🇪 Jerrymac Adams Oluoch, Kenya 🇰🇪</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
