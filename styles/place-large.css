@@ -1,0 +1,82 @@
+@media screen and (min-width: 800px) {
+    :root {
+        --accent3-color: #ffffff;
+    }
+
+    .main-content {
+        position: relative;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .image {
+        background-color: transparent;
+        padding-bottom: 0;
+    }
+
+    picture img {
+        padding-top: 0;
+        background-color: transparent;
+        max-height: 550px;
+        object-fit: cover;
+    }
+
+    .data, .weather {
+        width: 300px;
+        background-color: var(--accent3-color);
+        color: var(--secondary-color);
+        font-weight: 500;
+        opacity: 0.9;
+        padding-top: 100px !important;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        margin: 0;
+    }
+
+    .data h2, .weather h2 {
+        background-color: var(--accent1-color);
+        color: var(--primary-color);
+        padding: 12px;
+        text-align: left;
+        position: absolute;
+        width: 100%;
+        top: 15px;
+        left: -10px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+
+    .data div, .weather div {
+        padding: 4px;
+        font-size: small;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .data {
+        text-align: right;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    .weather h2::after {
+        content: " ☀️";
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+
+    #weather {
+        display: none;
+    }
+}

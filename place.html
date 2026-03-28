@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jerrymac Adams Oluoch">
+    <title>Nairobi - Kenya | The Green City in the Sun</title>
+    <meta name="description" content="A webpage about Nairobi, Kenya's vibrant capital city, known as the Green City in the Sun and home to the only national park within a city.">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Welcome to Nairobi, Kenya</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Nairobi city skyline with modern buildings and greenery" class="hero-image">
+            </picture>
+
+            <section class="data card">
+                <h2>Data</h2>
+                <div>
+                    <h3>Area:</h3>
+                    <p>696 sq mi (1,804 km²)</p>
+                </div>
+                <div>
+                    <h3>Population:</h3>
+                    <p>4.5 million (metro ~6.5 million)</p> 
+                </div>
+                <div>
+                    <h3>Capital:</h3>
+                    <p>Nairobi</p>
+                </div>
+                <div>
+                    <h3>Languages:</h3>
+                    <p>English, Swahili</p>
+                </div>
+                <div>
+                    <h3>Currency:</h3>
+                    <p>Kenyan Shilling (KES)</p>
+                </div>
+                <div>
+                    <h3>Time Zone:</h3>
+                    <p>EAT (UTC+3)</p>
+                </div>
+                <div>
+                    <h3>Calling Code:</h3>
+                    <p>+254-700-356-789</p>
+                </div>
+                <div>
+                    <h3>Internet TLD:</h3>
+                    <p>.ke</p>
+                </div>
+            </section>
+
+            <section class="weather card">
+                <h2 class="weather-title" data-emoticon="☀️">Weather</h2>
+                <img src="images/sunny-weather.svg" alt="sunny weather icon for Nairobi" id="weather">
+                <div>
+                    <h3>Temperature:</h3>
+                    <p><span id="temp-value">22</span>°C (72°F)</p>
+                </div>
+                <div>
+                    <h3>Conditions:</h3>
+                    <p>Sunny & Breezy ☀️</p>
+                </div>
+                <div>
+                    <h3>Wind:</h3>
+                    <p><span id="wind-speed">12</span> km/h (7.5 mph)</p>
+                </div>
+                <div>
+                    <h3>Wind Chill:</h3>
+                    <p id="wind-chill-display">--</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+  
+    <footer>
+        <p>
+            <span id="copyright">©</span> 
+            <span id="year">2026</span>
+            Jerrymac Adams Oluoch | Nairobi, Kenya
+        </p>
+        <p id="modified">Last modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
