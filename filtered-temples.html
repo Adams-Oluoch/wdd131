@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album showcasing various temples around the world with filtering options.">
+    <meta name="author" content="Jerrymac Adams Oluoch">
+    <title>Temple Album</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files - Mobile First -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2 class="title">Temple Album</h2>
+            <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" class="active" data-filter="all">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jerrymac Adams Oluoch | Kenya </p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

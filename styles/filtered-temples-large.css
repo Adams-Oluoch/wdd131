@@ -1,0 +1,23 @@
+@media screen and (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    main section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
