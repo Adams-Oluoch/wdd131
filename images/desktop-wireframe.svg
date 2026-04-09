@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="10" y="10" width="780" height="60" fill="#4A3728" rx="4"/>
+  <text x="400" y="45" font-family="Arial" font-size="20" font-weight="bold" fill="#FAF9F6" text-anchor="middle">My Little Library</text>
+  
+  <!-- Title -->
+  <rect x="10" y="80" width="780" height="30" fill="none" stroke="#C9A03D" stroke-width="2" rx="4"/>
+  <text x="400" y="102" font-family="Arial" font-size="16" font-weight="bold" fill="#4A3728" text-anchor="middle">My Book Collection</text>
+  
+  <!-- Book Card 1 -->
+  <rect x="10" y="120" width="185" height="210" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="20" y="130" width="165" height="80" fill="#C9A03D" rx="2"/>
+  <text x="102" y="225" font-family="Arial" font-size="11" font-weight="bold" fill="#4A3728" text-anchor="middle">Book Title 1</text>
+  <text x="102" y="242" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Author Name</text>
+  <text x="102" y="257" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Fiction - 320 pages</text>
+  
+  <!-- Book Card 2 -->
+  <rect x="207" y="120" width="185" height="210" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="217" y="130" width="165" height="80" fill="#C9A03D" rx="2"/>
+  <text x="299" y="225" font-family="Arial" font-size="11" font-weight="bold" fill="#4A3728" text-anchor="middle">Book Title 2</text>
+  <text x="299" y="242" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Author Name</text>
+  <text x="299" y="257" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Mystery - 280 pages</text>
+  
+  <!-- Book Card 3 -->
+  <rect x="404" y="120" width="185" height="210" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="414" y="130" width="165" height="80" fill="#C9A03D" rx="2"/>
+  <text x="496" y="225" font-family="Arial" font-size="11" font-weight="bold" fill="#4A3728" text-anchor="middle">Book Title 3</text>
+  <text x="496" y="242" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Author Name</text>
+  <text x="496" y="257" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Romance - 350 pages</text>
+  
+  <!-- Book Card 4 -->
+  <rect x="601" y="120" width="189" height="210" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="611" y="130" width="169" height="80" fill="#C9A03D" rx="2"/>
+  <text x="695" y="225" font-family="Arial" font-size="11" font-weight="bold" fill="#4A3728" text-anchor="middle">Book Title 4</text>
+  <text x="695" y="242" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Author Name</text>
+  <text x="695" y="257" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">Drama - 400 pages</text>
+  
+  <!-- Recommend Button -->
+  <rect x="250" y="345" width="300" height="35" fill="#C9A03D" rx="4"/>
+  <text x="400" y="368" font-family="Arial" font-size="13" font-weight="bold" fill="#FAF9F6" text-anchor="middle">Get Random Recommendation</text>
+</svg>

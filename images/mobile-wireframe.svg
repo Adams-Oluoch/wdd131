@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="10" y="10" width="380" height="60" fill="#4A3728" rx="4"/>
+  <text x="200" y="45" font-family="Arial" font-size="18" font-weight="bold" fill="#FAF9F6" text-anchor="middle">My Little Library</text>
+  
+  <!-- Title -->
+  <rect x="10" y="80" width="380" height="40" fill="none" stroke="#C9A03D" stroke-width="2" rx="4"/>
+  <text x="200" y="108" font-family="Arial" font-size="16" font-weight="bold" fill="#4A3728" text-anchor="middle">Book Collection</text>
+  
+  <!-- Book Card 1 -->
+  <rect x="10" y="130" width="380" height="100" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="15" y="135" width="70" height="90" fill="#C9A03D" rx="2"/>
+  <text x="95" y="155" font-family="Arial" font-size="12" font-weight="bold" fill="#4A3728">Book Title</text>
+  <text x="95" y="175" font-family="Arial" font-size="10" fill="#666">Author Name</text>
+  <text x="95" y="195" font-family="Arial" font-size="10" fill="#666">Genre: Fiction</text>
+  
+  <!-- Book Card 2 -->
+  <rect x="10" y="245" width="380" height="100" fill="#FAF9F6" stroke="#C9A03D" stroke-width="1" rx="4"/>
+  <rect x="15" y="250" width="70" height="90" fill="#C9A03D" rx="2"/>
+  <text x="95" y="270" font-family="Arial" font-size="12" font-weight="bold" fill="#4A3728">Book Title</text>
+  <text x="95" y="290" font-family="Arial" font-size="10" fill="#666">Author Name</text>
+  <text x="95" y="310" font-family="Arial" font-size="10" fill="#666">Genre: Mystery</text>
+  
+  <!-- Recommend Button -->
+  <rect x="50" y="360" width="300" height="40" fill="#C9A03D" rx="4"/>
+  <text x="200" y="387" font-family="Arial" font-size="14" font-weight="bold" fill="#FAF9F6" text-anchor="middle">Get Random Recommendation</text>
+  
+  <!-- Footer -->
+  <rect x="10" y="540" width="380" height="50" fill="#4A3728" rx="4"/>
+  <text x="200" y="563" font-family="Arial" font-size="10" fill="#FAF9F6" text-anchor="middle">© 2025 My Little Library</text>
+  <text x="200" y="580" font-family="Arial" font-size="10" fill="#FAF9F6" text-anchor="middle">Last Modified: Today</text>
+</svg>

@@ -1,0 +1,218 @@
+/* siteplan.css - Small Home Library Catalog */
+
+/* Color Schema Variables */
+:root {
+    --bg-beige: #F5E6D3;
+    --brown-deep: #4A3728;
+    --gold-soft: #C9A03D;
+    --off-white: #FAF9F6;
+    --gray-dark: #2C2C2C;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-beige);
+    color: var(--gray-dark);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Typography - Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--brown-deep);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--gold-soft);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--brown-deep);
+    border-radius: 8px;
+}
+
+header h1 {
+    color: var(--off-white);
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--off-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.site-name, 
+.site-purpose, 
+.scenarios, 
+.color-schema, 
+.typography {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gold-soft);
+}
+
+/* Link Styles */
+a {
+    color: var(--gold-soft);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--brown-deep);
+    text-decoration: underline;
+}
+
+/* Color Schema Demo Boxes */
+.color-schema p {
+    background-color: var(--off-white);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-left: 5px solid;
+    border-radius: 4px;
+}
+
+/* Warm Beige */
+.color-schema p:nth-of-type(1) {
+    background-color: #F5E6D3;
+    border-left-color: #F5E6D3;
+    color: var(--brown-deep);
+}
+
+/* Deep Brown */
+.color-schema p:nth-of-type(2) {
+    background-color: #4A3728;
+    border-left-color: #4A3728;
+    color: var(--off-white);
+}
+
+/* Soft Gold */
+.color-schema p:nth-of-type(3) {
+    background-color: #C9A03D;
+    border-left-color: #C9A03D;
+    color: var(--brown-deep);
+}
+
+/* Off White */
+.color-schema p:nth-of-type(4) {
+    background-color: #FAF9F6;
+    border-left-color: var(--gold-soft);
+    color: var(--brown-deep);
+}
+
+/* Dark Gray */
+.color-schema p:nth-of-type(5) {
+    background-color: #2C2C2C;
+    border-left-color: #2C2C2C;
+    color: var(--off-white);
+}
+
+/* Typography Demo */
+.typography p {
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    background-color: var(--bg-beige);
+    border-radius: 4px;
+}
+
+.typography p:nth-of-type(1) {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--brown-deep);
+}
+
+.typography p:nth-of-type(2) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--gray-dark);
+}
+
+/* Wireframes Section */
+.wireframes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.wireframe-mobile,
+.wireframe-desktop {
+    background-color: var(--bg-beige);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.wireframe-mobile img,
+.wireframe-desktop img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0d6cc;
+}
+
+.wireframe-mobile p,
+.wireframe-desktop p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--brown-deep);
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--brown-deep);
+    color: var(--off-white);
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .wireframes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .wireframe-mobile,
+    .wireframe-desktop {
+        flex: 1;
+    }
+    
+    body {
+        padding: 2rem;
+    }
+}
