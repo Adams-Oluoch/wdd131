@@ -14,7 +14,6 @@
 
     main {
         max-width: 750px;
-        padding: 0;
     }
 
     .product-review-form {
@@ -28,7 +27,6 @@
 
     .form-group label {
         font-size: 0.9rem;
-        font-weight: 700;
     }
 
     .features-label {
@@ -37,10 +35,8 @@
 
     select, input[type="date"], input[type="text"], textarea {
         padding: 0.55rem;
-        font-size: 0.95rem;
     }
 
-    /* Rating - Desktop */
     .star-rating {
         gap: 1.2rem;
     }
@@ -49,37 +45,43 @@
         font-size: 0.95rem;
     }
 
-    /* Checkbox Group - Desktop */
-    .checkbox-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
+    .rating-number span {
+        font-size: 0.95rem;
     }
 
     .checkbox-option {
         font-size: 0.9rem;
     }
 
-    /* Submit Button - Desktop */
     .submit-btn {
         width: auto;
         padding: 0.65rem 1.75rem;
         font-size: 0.9rem;
     }
 
-    /* Confirmation Container - Desktop */
     .confirmation-container {
         max-width: 550px;
         padding: 1.8rem;
-        border: 3px solid #003366;
+        margin: 1.8rem auto;
     }
 
     .confirmation-container h2 {
         font-size: 1.5rem;
+        margin-bottom: 0.75rem;
     }
 
     .review-counter {
         padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .review-counter p {
+        font-size: 0.9rem;
+        margin: 0 0 0.3rem 0;
+    }
+
+    .review-counter strong {
+        font-size: 1.5rem;
     }
 
     .review-btn {
@@ -90,6 +92,5 @@
     footer {
         padding: 1.8rem 1rem;
         font-size: 0.95rem;
-        border-top: 3px solid #E85B7A;
     }
 }
