@@ -1,0 +1,599 @@
+/* form.css - Mobile First */
+
+:root {
+    /* Color Schema */
+    --primary-blue: #003366;
+    --light-blue: #E6F0FF;
+    --border-blue: #003366;
+    --accent-pink: #E85B7A;
+    --text-dark: #003366;
+    --text-muted: #666666;
+    --border-light: #CCCCCC;
+    --background-white: #FFFFFF;
+    --background-light: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E6E6FA;
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #E6E6FA;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+/* Form Container */
+.product-review-form {
+    background: var(--background-white);
+    border: 4px solid var(--border-blue);
+    border-radius: 0;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-blue);
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+.features-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+/* Required Indicator */
+.required-indicator {
+    color: var(--accent-pink);
+    font-weight: bold;
+}
+
+/* Select, Input, Textarea */
+select, input[type="date"], input[type="text"], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-light);
+    border-radius: 0;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    background-color: var(--background-white);
+    color: var(--text-dark);
+}
+
+select:hover,
+input:hover,
+textarea:hover {
+    border-color: var(--border-blue);
+    background-color: #F9F9F9;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+select:invalid,
+input:invalid {
+    border-color: var(--accent-pink);
+}
+
+textarea {
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
+    min-height: 120px;
+}
+
+/* Rating Section */
+.rating-label {
+    margin-bottom: 0.75rem;
+}
+
+.star-rating {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    margin-top: 0.75rem;
+}
+
+.rating-number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.rating-number input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--primary-blue);
+}
+
+.rating-number span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.rating-number input[type="radio"]:checked + span {
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0;
+    accent-color: var(--primary-blue);
+}
+
+.checkbox-option span {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Submit Button */
+.submit-group {
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.submit-btn {
+    background: var(--accent-pink);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+
+.submit-btn:hover {
+    background: #D84860;
+    box-shadow: 0 4px 8px rgba(232, 91, 122, 0.3);
+}
+
+.submit-btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+    line-height: 1.6;
+    font-weight: 500;
+    border-top: 4px solid var(--accent-pink);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Placeholder Styling */
+::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+/* Confirmation Page Styles */
+.confirmation-container {
+    background: var(--background-white);
+    border: 4px solid var(--border-blue);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.confirmation-container h2 {
+    color: var(--primary-blue);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.confirmation-container p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.review-counter {
+    background: var(--light-blue);
+    padding: 1.5rem;
+    border-radius: 0;
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.review-counter p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.review-counter strong {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.review-btn {
+    display: inline-block;
+    background: var(--accent-pink);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.review-btn:hover {
+    background: #D84860;
+    box-shadow: 0 4px 8px rgba(232, 91, 122, 0.3);
+}
+
+.review-btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Keyboard navigation indicators */
+*:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.star-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    flex: 1;
+    min-width: 55px;
+    text-align: center;
+}
+
+.star-option:hover {
+    background-color: var(--background-light);
+    border-color: var(--primary-light);
+}
+
+.star-option:focus-within {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 2px;
+}
+
+.star-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--accent-gold);
+}
+
+.star-option .star {
+    font-size: 1.25rem;
+    color: var(--accent-gold);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.star-option .rating-text {
+    font-size: 0.75rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.star-option input[type="radio"]:checked + .star {
+    color: var(--accent-gold);
+    text-shadow: 0 0 8px rgba(230, 126, 34, 0.3);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+    background: var(--background-light);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.checkbox-option:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0;
+    accent-color: var(--success-green);
+}
+
+.checkbox-option span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--success-green), #219A52);
+    color: white;
+    border: 3px solid transparent;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(39, 174, 96, 0.4);
+}
+
+.submit-btn:focus {
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Placeholder Styling */
+::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+/* Confirmation Page Styles */
+.confirmation-container {
+    background: var(--background-white);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.confirmation-container h2 {
+    color: var(--primary-dark);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+}
+
+.confirmation-container p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.review-counter {
+    background: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--success-green);
+}
+
+.review-counter p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.review-counter strong {
+    color: var(--success-green);
+    font-size: 2rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.review-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+    color: white;
+    text-decoration: none;
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 3px solid transparent;
+}
+
+.review-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(44, 62, 80, 0.4);
+}
+
+.review-btn:focus {
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* Keyboard navigation indicators */
+*:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 2px;
+}
+
+/* Link focus states */
+a:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Responsive text sizing */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .confirmation-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .submit-btn {
+        font-size: 1rem;
+        padding: 0.875rem;
+    }
+}

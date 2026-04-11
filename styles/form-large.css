@@ -1,0 +1,95 @@
+/* form-large.css - Desktop Styles */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        max-width: 900px;
+        padding: 0;
+    }
+
+    .product-review-form {
+        padding: 2.5rem;
+        border: 5px solid #003366;
+    }
+
+    .form-group {
+        margin-bottom: 1.75rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .features-label {
+        font-size: 1rem;
+    }
+
+    select, input[type="date"], input[type="text"], textarea {
+        padding: 0.875rem;
+        font-size: 1rem;
+    }
+
+    /* Rating - Desktop */
+    .star-rating {
+        gap: 2rem;
+    }
+
+    .rating-number {
+        font-size: 1.1rem;
+    }
+
+    /* Checkbox Group - Desktop */
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .checkbox-option {
+        font-size: 1rem;
+    }
+
+    /* Submit Button - Desktop */
+    .submit-btn {
+        width: auto;
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Confirmation Container - Desktop */
+    .confirmation-container {
+        max-width: 600px;
+        padding: 2.5rem;
+        border: 5px solid #003366;
+    }
+
+    .confirmation-container h2 {
+        font-size: 2rem;
+    }
+
+    .review-counter {
+        padding: 2rem;
+    }
+
+    .review-btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 2.5rem 1rem;
+        font-size: 1rem;
+        border-top: 4px solid #E85B7A;
+    }
+}
