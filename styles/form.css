@@ -25,23 +25,23 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #E6E6FA;
+    background-color: #F0F4F8;
     color: var(--text-dark);
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 /* Header */
 header {
-    background-color: #E6E6FA;
+    background-color: #F0F4F8;
     color: var(--text-dark);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.25rem 1rem;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin: 0;
@@ -49,23 +49,23 @@ header h1 {
 
 /* Main Content */
 main {
-    max-width: 800px;
-    margin: 1.5rem auto;
+    max-width: 700px;
+    margin: 1rem auto;
     padding: 0 1rem;
 }
 
 /* Form Container */
 .product-review-form {
     background: var(--background-white);
-    border: 4px solid var(--border-blue);
+    border: 3px solid var(--border-blue);
     border-radius: 0;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Form Groups */
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
     display: flex;
     flex-direction: column;
 }
@@ -73,19 +73,19 @@ main {
 .form-group label {
     display: block;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     color: var(--primary-blue);
-    font-size: 0.95rem;
-    line-height: 1.3;
+    font-size: 0.88rem;
+    line-height: 1.2;
 }
 
 .features-label {
     display: block;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     color: var(--primary-blue);
-    font-size: 0.95rem;
-    line-height: 1.3;
+    font-size: 0.88rem;
+    line-height: 1.2;
 }
 
 /* Required Indicator */
@@ -97,7 +97,7 @@ main {
 /* Select, Input, Textarea */
 select, input[type="date"], input[type="text"], textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.5rem;
     border: 1px solid var(--border-light);
     border-radius: 0;
     font-size: 1rem;
@@ -129,7 +129,7 @@ input:invalid {
 textarea {
     resize: vertical;
     font-family: 'Inter', sans-serif;
-    min-height: 120px;
+    min-height: 90px;
 }
 
 /* Rating Section */
@@ -139,17 +139,17 @@ textarea {
 
 .star-rating {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: flex-start;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
 }
 
 .rating-number {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-dark);
 }
@@ -162,7 +162,7 @@ textarea {
 }
 
 .rating-number span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--primary-blue);
 }
@@ -176,22 +176,22 @@ textarea {
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 0.75rem;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .checkbox-option {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     cursor: pointer;
-    font-size: 0.95rem;
-    padding: 0.25rem 0;
+    font-size: 0.88rem;
+    padding: 0.2rem 0;
 }
 
 .checkbox-option input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
     margin: 0;
     accent-color: var(--primary-blue);
@@ -204,7 +204,7 @@ textarea {
 
 /* Submit Button */
 .submit-group {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     align-items: flex-start;
 }
 
@@ -212,8 +212,8 @@ textarea {
     background: var(--accent-pink);
     color: white;
     border: none;
-    padding: 0.75rem 2rem;
-    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.88rem;
     font-weight: 600;
     border-radius: 0;
     cursor: pointer;
@@ -239,18 +239,18 @@ textarea {
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.2rem 1rem;
     background-color: var(--primary-blue);
     color: white;
-    font-size: 0.95rem;
-    margin-top: 3rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    line-height: 1.5;
     font-weight: 500;
-    border-top: 4px solid var(--accent-pink);
+    border-top: 3px solid var(--accent-pink);
 }
 
 footer p {
-    margin: 0.5rem 0;
+    margin: 0.35rem 0;
 }
 
 /* Placeholder Styling */
@@ -262,12 +262,12 @@ footer p {
 /* Confirmation Page Styles */
 .confirmation-container {
     background: var(--background-white);
-    border: 4px solid var(--border-blue);
-    padding: 2rem;
+    border: 3px solid var(--border-blue);
+    padding: 1.5rem;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 500px;
+    margin: 1.5rem auto;
+    max-width: 450px;
 }
 
 .success-icon {
@@ -279,8 +279,8 @@ footer p {
 .confirmation-container h2 {
     color: var(--primary-blue);
     font-family: 'Playfair Display', serif;
-    margin-bottom: 0.75rem;
-    font-size: 1.75rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -292,22 +292,22 @@ footer p {
 
 .review-counter {
     background: var(--light-blue);
-    padding: 1.5rem;
+    padding: 1.1rem;
     border-radius: 0;
-    margin: 2rem 0;
-    border-left: 4px solid var(--primary-blue);
+    margin: 1.2rem 0;
+    border-left: 3px solid var(--primary-blue);
 }
 
 .review-counter p {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
+    margin: 0 0 0.3rem 0;
+    font-size: 0.88rem;
     color: var(--text-dark);
     font-weight: 600;
 }
 
 .review-counter strong {
     color: var(--primary-blue);
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
     margin-top: 0.5rem;
 }
@@ -317,11 +317,11 @@ footer p {
     background: var(--accent-pink);
     color: white;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 0;
     font-weight: 600;
     transition: all 0.3s ease;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     border: none;
 }
 
