@@ -1,0 +1,126 @@
+/* style-large.css - Desktop Styles (min-width: 769px) */
+
+@media (min-width: 769px) {
+    .nav-mobile {
+        display: none !important;
+    }
+    
+    .nav-desktop {
+        display: block !important;
+    }
+    
+    .hamburger {
+        display: none !important;
+    }
+    
+    .book-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    
+    .hero, .detail-hero, .contact-hero {
+        padding: 3rem;
+    }
+
+    /* Newsletter responsive */
+    .newsletter-section {
+        padding: 3rem;
+    }
+
+    .newsletter-input-group {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .newsletter-form input[type="email"] {
+        flex: 1;
+        min-width: auto;
+    }
+    
+    .stats-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .detail-content {
+        flex-wrap: nowrap;
+    }
+
+    /* Enhanced Form Styles */
+    .recommendation-form {
+        padding: 3rem;
+        max-width: 800px;
+    }
+
+    .form-fieldset {
+        padding: 2rem;
+    }
+
+    .radio-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .info-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer desktop layout */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        gap: 4rem;
+    }
+
+    .footer-section {
+        border-left: 3px solid var(--accent-blue);
+        padding-left: 1.5rem;
+    }
+
+    .footer-section:last-child {
+        border-left: 3px solid var(--gold-soft);
+        text-align: center;
+    }
+
+    .footer-section h4 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-section:last-child h4 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .socialmedia {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .socialmedia a {
+        width: 55px;
+        height: 55px;
+    }
+
+    .socialmedia img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    main {
+        padding: 2rem;
+    }
+}

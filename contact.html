@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Library | Get a Recommendation</title>
+    <meta name="author" content="Jerrymac Adams Oluoch">
+    <meta name="description" content="Get personalized book recommendations based on your preferences. Fill out the form and discover your next favorite read.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zUHB8LvYSEa1VTXlmJkEbSqt+q9G5D5YM4vB8Ds8cVVeQv0SlBbzLsvYw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body id="contact-page">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>📚 My Little Library</h1>
+                <p class="tagline">A cozy collection of cherished books</p>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="library.html">Catalog</a></li>
+                    <li><a href="book-detail.html">Book Details</a></li>
+                    <li><a href="contact.html" class="active">Get a Recommendation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="library.html">Catalog</a></li>
+                <li><a href="book-detail.html">Book Details</a></li>
+                <li><a href="contact.html">Get a Recommendation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h2>Discover Your Next Read</h2>
+            <p>Tell me what you're looking for, and I'll recommend the perfect book from my collection.</p>
+        </section>
+
+        <!-- Library Information Section -->
+        <section class="library-info">
+            <div class="info-card">
+                <h3>📚 About My Library</h3>
+                <div class="info-content">
+                    <div class="info-block">
+                        <h4>Collection Size</h4>
+                        <p>8 carefully curated books</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Genres Available</h4>
+                        <p>Religious, Classics, Fantasy, Religious Fiction, Science Fiction</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Why Use This?</h4>
+                        <p>Get personalized recommendations tailored to your reading preferences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendation Form Section -->
+        <section class="form-section">
+            <form id="recommendation-form" class="recommendation-form" action="confirmation.html" method="get">
+                <div class="form-header">
+                    <h3>Request a Recommendation</h3>
+                    <p class="form-subtitle">Complete the form below and receive a personalized book suggestion</p>
+                </div>
+
+                <!-- Your Information Section -->
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">📋 Your Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="visitor-name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="visitor-name" name="visitorName" required placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visitor-email">Your Email <span class="required">*</span></label>
+                        <input type="email" id="visitor-email" name="visitorEmail" required placeholder="Enter your email">
+                    </div>
+                </fieldset>
+
+                <!-- Book Preferences Section -->
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">📖 Your Book Preferences</legend>
+                    
+                    <div class="form-group">
+                        <label for="fav-genre">Favorite Genre <span class="required">*</span></label>
+                        <select id="fav-genre" name="favGenre" required>
+                            <option value="" disabled selected>-- Select a Genre --</option>
+                            <option value="Religious">Religious</option>
+                            <option value="Classic">Classics</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Religious Fiction">Religious Fiction</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group preference-group">
+                        <label class="group-label">What matters most to you? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="preference" value="Story-driven" required> 
+                                <span>Story-driven plot</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="preference" value="Character-focused" required> 
+                                <span>Character-focused narrative</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="preference" value="Atmospheric" required> 
+                                <span>Atmospheric & moody</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="preference" value="Fast-paced" required> 
+                                <span>Fast-paced & exciting</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Reading Mood Section -->
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">✨ Your Reading Mood</legend>
+                    
+                    <div class="form-group">
+                        <label for="mood">What's your current reading mood? <span class="optional">(Optional)</span></label>
+                        <textarea id="mood" name="mood" rows="4" placeholder="e.g., I want something uplifting, mysterious, thought-provoking, or inspiring..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Preferences Section -->
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">🔔 Preferences</legend>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subscribe" value="yes"> 
+                            <span>Send me book recommendations via email</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Get My Recommendation ✨</button>
+                    <p class="form-note">Required fields are marked with <span class="required">*</span></p>
+                </div>
+            </form>
+        </section>
+
+        <section class="recent-recommendations">
+            <h3>Recent Recommendations</h3>
+            <div id="recommendation-history">
+                <p class="history-placeholder">No recommendations yet. Fill out the form above to get your first recommendation!</p>
+            </div>
+            <button id="clear-history-btn" class="btn-outline">Clear History</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>©️ <span class="currentyear"></span> 📚 Jerrymac Adams Oluoch | My Little Library</p>
+                <p class="lastmodified"></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-links">
+                    <a href="library.html">Catalog</a>
+                    <a href="book-detail.html">Book Details</a>
+                    <a href="contact.html">Get a Recommendation</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+            <div class="footer-section footer-social">
+                <h4>Follow Us</h4>
+                <nav class="socialmedia">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page" title="Facebook">
+                        <img src="images/facebook.png" alt="Facebook" width="28" height="28">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page" title="LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn" width="28" height="28">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page" title="Instagram">
+                        <img src="images/instagram.png" alt="Instagram" width="28" height="28">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

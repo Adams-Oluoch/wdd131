@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Library | Home Catalog</title>
+    <meta name="author" content="Jerrymac Adams Oluoch">
+    <meta name="description" content="Browse my personal home library collection. Discover books by title, author, and genre, or get a random reading recommendation.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zUHB8LvYSEa1VTXlmJkEbSqt+q9G5D5YM4vB8Ds8cVVeQv0SlBbzLsvYw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body id="home-page">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>📚 My Little Library</h1>
+                <p class="tagline">A cozy collection of cherished books</p>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="library.html" class="active">Catalog</a></li>
+                    <li><a href="book-detail.html">Book Details</a></li>
+                    <li><a href="contact.html">Get a Recommendation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="library.html">Catalog</a></li>
+                <li><a href="book-detail.html">Book Details</a></li>
+                <li><a href="contact.html">Get a Recommendation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to My Little Library</h2>
+            <p>Explore my personal collection of books, from timeless classics to modern favorites.</p>
+        </section>
+
+        <section class="newsletter-section">
+            <h3>Stay Connected with New Recommendations</h3>
+            <p>Subscribe to receive personalized book recommendations and updates about my library collection.</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                <div class="newsletter-input-group">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-gold">Subscribe</button>
+                </div>
+                <p class="newsletter-note">We'll never share your email. Unsubscribe anytime.</p>
+            </form>
+        </section>
+
+        <section class="catalog-controls">
+            <div class="filter-section">
+                <label for="genre-filter">Filter by Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="Classic">Classics</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Literary Fiction">Literary Fiction</option>
+                </select>
+            </div>
+            <button id="random-recommendation-btn" class="btn-gold">✨ Surprise Me! ✨</button>
+        </section>
+
+        <section class="book-grid" id="book-grid">
+            <!-- Books will be dynamically loaded here by JavaScript -->
+            <div class="loading">Loading your library...</div>
+        </section>
+
+        <section class="stats-section" id="stats-section">
+            <h3>Library Stats</h3>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-books">0</span>
+                    <span class="stat-label">Total Books</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-genres">0</span>
+                    <span class="stat-label">Genres</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="most-common-genre">-</span>
+                    <span class="stat-label">Most Popular Genre</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>©️ <span class="currentyear"></span> 📚 Jerrymac Adams Oluoch | My Little Library</p>
+                <p class="lastmodified"></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-links">
+                    <a href="library.html">Catalog</a>
+                    <a href="book-detail.html">Book Details</a>
+                    <a href="contact.html">Get a Recommendation</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+            <div class="footer-section footer-social">
+                <h4>Follow Us</h4>
+                <nav class="socialmedia">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page" title="Facebook">
+                        <img src="images/facebook.png" alt="Facebook" width="28" height="28">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page" title="LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn" width="28" height="28">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page" title="Instagram">
+                        <img src="images/instagram.png" alt="Instagram" width="28" height="28">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
